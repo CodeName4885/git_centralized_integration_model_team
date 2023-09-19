@@ -1,6 +1,6 @@
 public class Calculator {
 	
-    public static double calculateSquareRoot(double num){
+    public static double calculatePow(double num){
     	if(num >=0){
 		return Math.sqrt(num);
 	}else{
@@ -29,6 +29,9 @@ public class Calculator {
                     System.out.println("0으로 나눌 수 없습니다.");
                 }
                 break;
+	    case '^':
+		result = Math.pow(num1, num2);
+		break;
             default:
                 System.out.println("올바른 연산자를 입력하세요.");
         }
