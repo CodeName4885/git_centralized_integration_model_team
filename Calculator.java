@@ -1,4 +1,13 @@
 public class Calculator {
+	
+    public static double calculateSquareRoot(double num){
+    	if(num >=0){
+		return Math.sqrt(num);
+	}else{
+		System.out.println("음수의 제곱근을 계산할 수 없습니다.");
+
+	}
+    }
 
     public static double performOperation(double num1, double num2, char operator) {
         double result = 0.0;
